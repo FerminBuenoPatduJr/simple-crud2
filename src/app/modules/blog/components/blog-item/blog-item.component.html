@@ -1,20 +1,22 @@
-<button type="button" (click)="getBlogs()">Blog List</button>
-<br><br>
+<button type="button" (click)="getBlogs()">Blog List</button> <br /><br />
 <table>
-    <tr>
-        <th>ID</th>
-        <th>TITLE</th>
-        <th>DESCRIPTION</th>
-        <th>AUTHOR</th>
-        <th>COMMENTS</th>
-        <th>ACTIONS</th>
-    </tr>
-    <tr *ngFor="let data of blogList">
-        <td>{{data.id}}</td>
-        <td>{{data.title}}</td>
-        <td>{{data.description}}</td>
-        <td>{{data.author}}</td>
-        <td>{{data.comments}}</td>
-        <td><button class="button">Edit</button><br><button class="danger">Delete</button></td>
-    </tr>
+  <tr>
+    <th>ID</th>
+    <th>TITLE</th>
+    <th>DESCRIPTION</th>
+    <th>AUTHOR</th>
+    <th>COMMENTS</th>
+    <th>ACTIONS</th>
+  </tr>
+  <tr *ngFor="let data of blogList">
+    <td>{{ data.id }}</td>
+    <td>{{ data.title }}</td>
+    <td>{{ data.description }}</td>
+    <td>{{ data.author }}</td>
+    <td>{{ data.comments }}</td>
+    <td>
+      <button class="button1">Edit</button
+      ><button class="danger">Delete</button>
+    </td>
+  </tr>
 </table>

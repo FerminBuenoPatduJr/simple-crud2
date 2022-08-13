@@ -1,21 +1,31 @@
-import { Component, Input, OnInit } from '@angular/core';
+
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Blog } from '../../models/blog.interface';
 import { BlogService } from '../../services/blog.service';
 
 @Component({
   selector: 'app-blog-item',
   templateUrl: './blog-item.component.html',
-  styleUrls: ['./blog-item.component.scss']
+  styleUrls: ['./blog-item.component.scss'],
 })
 export class BlogItemComponent implements OnInit {
-  blogList: Blog[] = [];
-  constructor(private blogService: BlogService) { }
+  @Input() blogItem: Blog | undefined;
+  @Output() actionEmitter = new EventEmitter<Blog>();
+  blogList: Blog[] | undefined;
 
-  ngOnInit(): void {
-  }
+  constructor(private blogService: BlogService) {}
+
+  ngOnInit(): void {}
 
   getBlogs() {
     this.blogList = this.blogService.getBlogs();
   }
-
 }
+
+// function button1() {
+//   throw new Error('Function not implemented.');
+// }
+
+// function danger() {
+//   throw new Error('Function not implemented.');
+// }
