@@ -2,35 +2,37 @@ import { Injectable } from '@angular/core';
 import { Blog } from '../models/blog.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BlogService {
-  private blogs: Blog[]=[
+  private blogs: Blog[] = [
     {
       id: 1,
-      title: "Blog_Title_1",
-      description: "Blog_Description",
-      author: "Blog_Author",
-      comments: ["BlogComments1","BlogComments2"]
-  },
-  {
+      title: 'Beyond the Beyond',
+      description: 'The kickstarter smart citizen kit',
+      author: 'Bruce Sterling',
+      comments: ['Amazing', 'Educational'],
+    },
+    {
       id: 2,
-      title: "Blog_2",
-      description: "Fantasy",
-      author: "JK Rowling",
-      comments: ["Magical","Spectacular"]
-  },
-  {
+      title: 'The Lipstick Chronicles',
+      description:
+        'Copies of Blackbird Sisters mysteries can be found at all bookstores and in e-book form from all book vendors.',
+      author: 'Nancy Martin',
+      comments: ['Apparel', 'Beauty'],
+    },
+    {
       id: 3,
-      title: "Blog_3",
-      description: "Horror",
-      author: "Sadako",
-      comments: ["thriller","scary","suspense"]
-  }
-  ]
+      title: 'No rules. Just write',
+      description:
+        'The nature lover in me is constantly at war with my frustrated-gardener self.',
+      author: 'Brenda Coulter',
+      comments: ['Adventure', 'Nature', 'Outdoor'],
+    },
+  ];
 
-  getBlogs(){
-    return this.blogs
+  getBlogs() {
+    return this.blogs;
   }
-  constructor() { }
+  constructor() {}
 }

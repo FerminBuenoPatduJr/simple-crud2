@@ -2,33 +2,33 @@ import { Injectable } from '@angular/core';
 import { Book } from '../models/book.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BookService {
-  private books: Book[]=[
+  private books: Book[] = [
     {
       id: 1,
-      name: "Harry Potter 1",
-      authors: ["J.K, Rowling"],
-      isbn: "12345667"
+      name: 'Harry Potter 1',
+      authors: ['J.K. Rowling'],
+      isbn: '1234566745',
     },
-  {
+    {
       id: 2,
-      name: "Harry Potter 2",
-      authors: ["J.K, Rowling"],
-      isbn: "1234356"
+      name: 'Anna Karenina',
+      authors: ['Leo Tolstoy'],
+      isbn: '1234356234',
     },
-  {
+    {
       id: 3,
-      name: "Harry Potter 3",
-      authors: ["J.K, Rowling"],
-      isbn: "132435465"
-    }
+      name: 'Moby-Dick',
+      authors: ['Herman Merville'],
+      isbn: '987345676',
+    },
   ];
 
-  getBooks(){
-    return this.books
+  getBooks() {
+    return this.books;
   }
 
-  constructor() { }
+  constructor() {}
 }
