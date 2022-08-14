@@ -21,11 +21,3 @@ export class BlogItemComponent implements OnInit {
     this.blogList = this.blogService.getBlogs();
   }
 }
-
-// function button1() {
-//   throw new Error('Function not implemented.');
-// }
-
-// function danger() {
-//   throw new Error('Function not implemented.');
-// }
