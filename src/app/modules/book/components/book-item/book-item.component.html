@@ -1,18 +1,10 @@
-<button type="button" (click)="getBooks()">Book List</button>
-<br><br>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>NAME</th>
-        <th>AUTHORS</th>
-        <th>ISBN</th>
-        <th>ACTIONS</th>
-    </tr>
-    <tr *ngFor="let data of bookList">
-        <td>{{data.id}}</td>
-        <td>{{data.name}}</td>
-        <td>{{data.authors}}</td>
-        <td>{{data.isbn}}</td>
-        <td><button class="button1">Edit</button><button class="danger">Delete</button></td>
-    </tr>
-</table>
+<div
+ class="card">
+  <h1 class="name">{{books?.name}}</h1>
+  <div class="author">Author: {{books?.author}}</div>
+  <div class="isbn">ISBN: {{books?.isbn}}</div><br>
+
+        <button (click)="button1()">Edit</button>
+
+        <button class="danger"(click)="danger()">Delete</button><br><br>
+</div>
