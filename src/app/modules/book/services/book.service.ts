@@ -9,19 +9,19 @@ export class BookService {
     {
       id: 1,
       name: 'Harry Potter 1',
-      author: ['J.K. Rowling'],
+      authors: ['J.K. Rowling'],
       isbn: '1234566745',
     },
     {
       id: 2,
       name: 'Anna Karenina',
-      author: ['Leo Tolstoy'],
+      authors: ['Leo Tolstoy'],
       isbn: '1234356234',
     },
     {
       id: 3,
       name: 'Moby-Dick',
-      author: ['Herman Merville'],
+      authors: ['Herman Merville'],
       isbn: '987345676',
     },
   ];

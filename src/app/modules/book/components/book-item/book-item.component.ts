@@ -12,7 +12,7 @@ export class BookItemComponent implements OnInit {
     | {
         id: number;
         name: string;
-        author: string[];
+        authors: string[];
         isbn: string;
       }
     | undefined;
