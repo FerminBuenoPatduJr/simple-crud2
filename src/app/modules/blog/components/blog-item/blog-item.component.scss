@@ -1,40 +1,6 @@
-// .button {
-//     background-color: rgb(199, 203, 203);
-//     border: none;
-//     color: black;
-//     padding: 10px 12px;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//     font-size: 16px;
-//     margin: 4px 2px;
-//     cursor: pointer;
-//     -webkit-transition-duration: 0.4s;
-//     transition-duration: 0.4s;
-//     border-radius: 6px;
-
-// }
-
-// .danger {
-//     background-color: #da3705;
-//     border: none;
-//     color: black;
-//     padding: 10px 12px;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//     font-size: 16px;
-//     margin: 4px 2px;
-//     cursor: pointer;
-//     -webkit-transition-duration: 0.4s;
-//     transition-duration: 0.4s;
-//     border-radius: 6px;
-// }
-
 table {
     font-family: arial, sans-serif;
     border: 1px solid;
-
 }
 
 td {
@@ -131,6 +97,14 @@ tr:nth-child(even) {
     position:relative;
     top:1px;
   }
+
+  // div {
+  //   background-color: lightgrey;
+  //   width: 300px;
+  //   border: 15px solid green;
+  //   padding: 50px;
+  //   margin: 20px;
+  // }
    }
 
 
