@@ -24,7 +24,7 @@ export class BlogItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  button1() {
+  edit() {
     this.actionEmitter.emit(this.blog);
   }
 

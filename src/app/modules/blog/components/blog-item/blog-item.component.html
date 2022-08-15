@@ -4,17 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
+        box-shadow: 4 8px 16px 4 rgba(0, 0, 0, 0.2);
+        transition: 0.8s;
         width: 90%;
         border-radius: 5px;
-        background-color: rgb(202, 253, 255);
+        background-color: rgb(130, 238, 238);
         margin-left: 55px;
         text-align: center;
+        margin-bottom: 15px;
       }
 
       .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px 0 rgba(255, 0, 85, 0.2);
       }
 
       img {
@@ -34,7 +35,7 @@
       <div class="comments"><b>Comments:</b> {{ blog?.comments }}</div>
       <br />
 
-      <button (click)="button1()">Edit</button>
+      <button (click)="edit()">Edit</button>
 
       <button class="danger" (click)="danger()">Delete</button><br /><br />
     </div>
