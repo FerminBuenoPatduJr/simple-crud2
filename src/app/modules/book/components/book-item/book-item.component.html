@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.7s;
-  width: 40%;
-  border-radius: 5px;
-  background-color: rgb(214, 177, 222);
-  margin-left: 55px;
-  width: 90%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-.container {
-  padding: 2px 16px;
-}
-</style>
-</head>
 <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    color: black;
+    font-size: 10pt;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #000000;
+}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.7s;
+      width: 40%;
+      border-radius: 5px;
+      background-color: rgb(214, 177, 222);
+      margin-left: 55px;
+      width: 90%;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 0%;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2);
+    }
+/*
+    img {
+      border-radius: 5px 5px 0 0;
+    } */
+
+    .container {
+      padding: 2px 16px;
+    }
+  </style>
+</head>
+</body>
+</html>
 
 
-<div
- class="card">
+
+<div class="card">
 
   <h2 class="name">{{books?.name}}</h2>
   <div class="authors"><b>Author:</b>{{books?.authors}}</div>
   <div class="isbn"><b>ISBN:</b> {{books?.isbn}}</div><br>
 
-        <button (click)="button1()">Edit</button>
+  <button (click)="button1()">Edit</button>
 
-        <button class="danger"(click)="danger()">Delete</button><br><br>
+  <button class="danger" (click)="danger()">Delete</button><br><br>
 </div>
-
