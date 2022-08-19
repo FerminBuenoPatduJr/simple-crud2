@@ -19,6 +19,8 @@ export class BlogItemComponent implements OnInit {
     | undefined;
   @Output() actionEmitter = new EventEmitter<Blog>();
   blogList: Blog[] = [];
+  @Output() editEmitter = new EventEmitter<Blog>();
+  @Output() deleteEmitter = new EventEmitter<Blog>();
 
   constructor(private blogService: BlogService) {}
 

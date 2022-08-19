@@ -54,9 +54,9 @@
   <div class="comments"><b>Comments:</b> {{ blog?.comments }}</div>
   <br />
 
-  <button (click)="edit()">Edit</button>
+  <button  [routerLink]="['form']" class="button" mat-button>EDIT</button>
 
-  <button class="danger" (click)="danger()">Delete</button><br /><br />
+  <button class="button" mat-button>DELETE</button>
 </div>
 <!-- </body> -->
 
