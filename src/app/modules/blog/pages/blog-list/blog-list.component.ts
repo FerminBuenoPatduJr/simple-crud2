@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Blog } from '../../models/blog.interface';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BlogService } from '../../services/blog.service';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-blog-list',
