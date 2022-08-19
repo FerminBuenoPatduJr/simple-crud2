@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Blog } from '../models/blog.interface';
 
+
 @Injectable({
   providedIn: 'root',
 })
 export class BlogService {
+
+  constructor() { }
+
   private blogs: Blog[] = [
     {
       id: 1,
@@ -34,5 +38,5 @@ export class BlogService {
   getBlogs() {
     return this.blogs;
   }
-  constructor() {}
+
 }

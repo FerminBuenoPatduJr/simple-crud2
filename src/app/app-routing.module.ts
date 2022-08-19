@@ -6,6 +6,11 @@ import { UserModule } from './modules/user/user.module';
 
 const routes: Routes = [
   {
+    path: "",
+    redirectTo: "blog",
+    pathMatch: "full"
+  },
+  {
     path: 'blog',
     loadChildren: () =>
       import('./modules/blog/blog.module').then((m) => m.BlogModule),
