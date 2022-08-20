@@ -3,6 +3,7 @@ import { Blog } from '../../models/blog.interface';
 import { BlogService } from '../../services/blog.service';
 
 
+
 @Component({
   selector: 'app-blog-list',
   templateUrl: './blog-list.component.html',
