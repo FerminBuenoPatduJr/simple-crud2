@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from '../../models/book.interface';
+import { Book } from '../../models/book';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BookService } from '../../services/book.service';
 
