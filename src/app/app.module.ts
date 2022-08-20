@@ -6,7 +6,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 // import { CommandBarComponent } from './shared/components/command-bar/command-bar.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
+// import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -15,8 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    FormsModule
-    // MatButtonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
