@@ -2,22 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Blog } from '../../models/blog.interface';
 import { BlogService } from '../../services/blog.service';
 
-
-
 @Component({
   selector: 'app-blog-list',
   templateUrl: './blog-list.component.html',
   styleUrls: ['./blog-list.component.scss'],
 })
 export class BlogListComponent implements OnInit {
-  blogs: // {
-  //   id: number;
-  //   title: string;
-  //   description: string;
-  //   author: string;
-  //   comments: string[];
-  // }
-  Blog[] = [];
+  blogs: Blog[] = [];
 
   constructor(private blogService: BlogService) {
     this.blogs = this.blogService.getBlogs();
